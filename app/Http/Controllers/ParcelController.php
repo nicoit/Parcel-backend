@@ -44,7 +44,7 @@ class ParcelController extends Controller
         if (!$retval) {
             return response(['error' => true, 'message' => 'Not found'], 404);
         }
-
+        return $retval;
     }
 
 
@@ -57,6 +57,7 @@ class ParcelController extends Controller
         if (!$retval) {
             return response(['error' => true, 'message' => 'Not found'], 404);
         }
+        return $retval;
     }
 
     /**
